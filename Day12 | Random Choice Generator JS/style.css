@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+body {
+  background-color: rebeccapurple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+.container {
+  width: 55%;
+  padding: 20px;
+}
+h3 {
+  text-align: center;
+  font-size: 25px;
+}
+p {
+  text-align: center;
+  font-size: 20px;
+}
+#text {
+  padding: 15px;
+  width: 100%;
+  margin: 20px 20px 20px 0;
+}
+#text:focus {
+  outline: 0;
+}
+.tags {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+.tag {
+  color: red;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 40px;
+  border: solid 1px grey;
+  border-radius: 15px;
+  margin: 0px 9px 10px 9px;
+  padding: 0 10px 0 10px;
+}
+.highlight {
+  color: whitesmoke;
+  background-color: purple;
+  border: solid 5px yellow;
+}
+.highlightFont {
+  font-size: 60px;
+}
