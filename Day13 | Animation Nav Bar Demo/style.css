@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #00dbde;
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+  margin: 0;
+}
+nav {
+  padding: 20px;
+  width: 80px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  transition: width 0.6s linear, box-shadow 0.6s linear;
+  position: relative;
+}
+nav.active {
+  width: 350px;
+  box-shadow: 2px 10px 5px rgba(0, 0, 0, 0.5);
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 0;
+  transition: width 0.6s linear;
+}
+nav.active ul {
+  width: 100%;
+}
+nav ul li {
+  transform: rotateY(0deg);
+  opacity: 0;
+  transition: transform 0.5s linear, opacity 0.5s linear;
+}
+nav.active ul li {
+  opacity: 1;
+  transform: rotateY(360deg);
+}
+nav ul a {
+  position: relative;
+  color: black;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.icon {
+  background-color: transparent;
+  cursor: pointer;
+  border: 0;
+  position: absolute;
+  padding: 0px;
+  height: 75px;
+  width: 80px;
+  right: 0px;
+  transition: all 0.7s linear;
+}
+nav.active .icon {
+  height: 30px;
+  width: 30px;
+  right: 2px;
+}
+.icon:focus {
+  outline: 0;
+}
+
+.icon .line {
+  background-color: darkblue;
+  height: 2px;
+  width: 20px;
+  position: absolute;
+  top: 17px;
+  left: 1px;
+  opacity: 0;
+  transition: transform 0.7s linear, opacity 0.4s linear;
+}
+nav.active .icon .line {
+  opacity: 1;
+}
+.icon .line2 {
+  top: auto;
+  bottom: 19px;
+}
+nav.active .icon .line1 {
+  transform: rotate(765deg) translateY(-5.5px);
+}
+nav.active .icon .line2 {
+  transform: rotate(-765deg) translateY(+5.5px);
+}
