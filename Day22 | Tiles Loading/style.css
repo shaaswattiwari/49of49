@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+body {
+  background-color: #ecf0f1;
+
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  overflow: hidden;
+}
+img {
+  max-width: 100%;
+}
+.card {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 350px;
+  position: relative;
+  background-color: rgb(230, 230, 230);
+  min-height: 410px;
+}
+.card-header {
+  height: 200px;
+}
+
+.card-header img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.card-content {
+  background-color: white;
+  padding: 30px;
+}
+.card-title {
+  height: 20px;
+  margin: 0;
+}
+.card-excerpt {
+  color: #777;
+  margin: 10px 0 20px;
+}
+.author {
+  display: flex;
+}
+.profile-img {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 40px;
+  width: 40px;
+}
+.author-info {
+  margin: 0 0 0 5px;
+  display: flex;
+  flex-direction: column;
+}
+.author-info small {
+  color: #aaa;
+}
+.loading {
+  visibility: hidden;
+}
+.animated-bg:before {
+  content: "";
+  top: 0;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  animation: slide 0.3s linear infinite;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(128, 186, 232, 0) 99%,
+    rgba(125, 185, 232, 0) 100%
+  );
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
