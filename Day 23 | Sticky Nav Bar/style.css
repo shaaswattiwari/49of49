@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+body {
+  display: flex;
+  margin: 0;
+  flex-wrap: wrap;
+  background: #af1a0d;
+  background: linear-gradient(to bottom right, #af1a0d, #dd98e8);
+}
+.nav {
+  background: #01ff71;
+  background: linear-gradient(to top left, #01ff71, #aac363);
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  position: fixed;
+  transition: all 0.3s ease-in-out;
+}
+.logo {
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+}
+ul {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+li a {
+  color: black;
+}
+a {
+  text-decoration: none;
+}
+.area {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://media.newyorker.com/photos/5d166131075b0600087bc777/master/pass/Crouch-Dark.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.area h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: goldenrod;
+}
+.content {
+  text-align: center;
+  display: flex;
+  font-size: large;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.content-box {
+  padding: 20px;
+  width: 31%;
+  margin: 10px;
+  border: solid 5px purple;
+}
+.scrolldown {
+  background: #6d5ccf;
+  background: linear-gradient(to bottom right, #6d5ccf, #8aec7f);
+  height: 50px;
+  font-size: 25px;
+  transition: all 0.3s ease-in-out;
+}
