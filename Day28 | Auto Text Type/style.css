@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(to right, #000000, #434343);
+}
+h1 {
+  color: aliceblue;
+}
+div {
+  position: absolute;
+  bottom: 20px;
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 1);
+  padding: 10px 20px;
+}
+
+input {
+  width: 50px;
+  font-size: 18px;
+  background: linear-gradient(to right, #000000, #434343);
+  border: none;
+  color: aliceblue;
+  text-align: center;
+}
+input:focus {
+  outline: none;
+}

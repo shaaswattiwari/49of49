@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+body {
+  text-align: center;
+  margin: 0;
+  overflow: hidden;
+  background: linear-gradient(to right, #4ca1af, #c4e0e5);
+}
+h3 {
+  margin-bottom: 3px;
+}
+span {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.fa-heart {
+  color: red;
+}
+.loveMe {
+  height: 440px;
+  width: 300px;
+  background: url("http://placeimg.com/640/480/any") no-repeat center
+    center/cover;
+  margin: auto;
+  max-width: 100%;
+  position: relative;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.loveMe .fa-heart {
+  position: absolute;
+  transform: translate(-50%, -50%) scale(0);
+  animation: grow 0.3s linear;
+}
+@keyframes grow {
+  to {
+    transform: translate(-50%, -50%) scale(6);
+    opacity: 0;
+  }
+}
