@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+body {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-top: 3rem;
+  background-color: #7bdaf3;
+}
+.add {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: #9ecb62;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: white;
+  border-radius: 3px;
+}
+.note {
+  background-color: #ffffff;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+  margin: 30px 20px;
+  height: 300px;
+  width: 300px;
+}
+.note .tools {
+  background-color: #9ecb62;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+.note .tools button {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+.note textarea {
+  outline: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1.5rem;
+  height: 300px;
+  width: 100%;
+  padding: 20px;
+  resize: none;
+}
+.hidden {
+  display: none;
+}
+.main {
+  padding: 20px;
+}
