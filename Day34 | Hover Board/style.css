@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: black;
+}
+.container {
+  height: 600px;
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  /* background-color: rgba(255, 255, 255, 0.03); */
+}
+.square {
+  background-color: rgba(255, 255, 255, 0.03);
+  margin: 0 2px 2px 0;
+  height: 20px;
+  width: 20px;
+  transition: all 0.3s ease-in-out;
+}
