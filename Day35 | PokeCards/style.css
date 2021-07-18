@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 15px 0 15px;
+  background: #efefbb;
+  background: linear-gradient(to right, #d4d3dd, #efefbb);
+  display: flex;
+  flex-wrap: wrap;
+}
+h1 {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0 0 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.poke-container {
+  display: flex;
+  margin: 20px 0 0 0;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.pokemon {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+img {
+  width: 180px;
+  height: 180px;
+  background-color: whitesmoke;
+  padding: 30px;
+  border-radius: 50%;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info .number {
+  border: 1px solid #777;
+  width: 100px;
+  height: 30px;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #777;
+  margin: 5px 0 0 0;
+}
+.info h3 {
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.info small {
+  margin: -15px 0 0 0;
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  body {
+    margin: 0px;
+  }
+  .poke-container {
+    justify-content: center;
+  }
+}
