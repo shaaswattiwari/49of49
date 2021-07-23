@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: whitesmoke;
+}
+.container {
+  height: 400px;
+  width: 600px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+h2 {
+  text-align: center;
+  height: 40%;
+  font-size: 18px;
+  padding: 10px;
+}
+.options {
+  height: 38%;
+  text-align: start;
+}
+label {
+  background-color: whitesmoke;
+  line-height: 2.3;
+}
+.submit {
+  width: 100%;
+  height: 12%;
+  position: absolute;
+  bottom: 0;
+  border-radius: 0 0 10px 10px;
+  border: none;
+  background-color: royalblue;
+  font-size: 20px;
+  cursor: pointer;
+}
