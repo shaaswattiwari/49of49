@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  overflow: hidden;
+  background-color: whitesmoke;
+}
+.panel-container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  max-width: 450px;
+  flex-wrap: wrap;
+  align-content: space-around;
+  width: 500px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+img {
+  max-width: 60%;
+}
+.rating-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+}
+small {
+  margin-top: 10px;
+}
+.rating {
+  cursor: pointer;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.active {
+  background-color: whitesmoke;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 40px;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: firebrick;
+  border: 0;
+  border-radius: 10px;
+}
+.btn:active {
+  transform: scale(0.95);
+}
+.fa-heart {
+  color: red;
+  font-size: 40px;
+}
+.submit {
+  line-height: 40px;
+}
