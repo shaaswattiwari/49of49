@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: whitesmoke;
+}
+.container {
+  max-width: 600px;
+  max-height: 400px;
+  background-color: royalblue;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 80px 0 80px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+.progress-bar {
+  background-color: white;
+  height: 4px;
+  border-radius: 20px;
+  width: 100%;
+  margin: 5px 0 15px 0;
+  align-self: flex-start;
+  animation: loading 10.2s infinite;
+  /* transition: all 0.2s ease-in-out; */
+}
+@keyframes loading {
+  0% {
+    width: 0%;
+  }
+}
+
+.container::before {
+  content: url("https://img.icons8.com/ios-glyphs/60/000000/quote-right.png");
+  position: absolute;
+  top: 30px;
+  right: 15px;
+  opacity: 0.7;
+}
+.container::after {
+  content: url("https://img.icons8.com/ios-glyphs/60/000000/quote-left.png");
+  position: absolute;
+  top: 30px;
+  left: 15px;
+  opacity: 0.7;
+}
+.message {
+  height: 50%;
+}
+.info {
+  margin: 20px 0 20px 0;
+  display: flex;
+  height: 30%;
+}
+img {
+  margin-right: 10px;
+  height: 80px;
+  border-radius: 50%;
+}
+.details {
+  text-align: center;
+  line-height: 0.5;
+  margin: auto;
+}
