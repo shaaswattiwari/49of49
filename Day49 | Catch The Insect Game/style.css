@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Press Start 2P", cursive;
+}
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: #516dff;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.mainpage {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.play {
+  height: 50px;
+  width: 150px;
+  font-size: 14px;
+  padding: 10px;
+  color: #516dff;
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+}
+.secpage {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.secpage .insects {
+  display: flex;
+}
+img {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+}
+.insect {
+  height: 150px;
+  width: 150px;
+  border: 2px solid white;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.insect:hover {
+  background-color: white;
+  color: #516dff;
+}
+.gamepage {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.gamepage header {
+  font-size: 14px;
+  width: 95%;
+  height: 10%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.gamepage .insertarea {
+  position: relative;
+  height: 90%;
+  width: 95%;
+  padding: 50px;
+  transition: all 0.2s ease-in-out;
+}
+
+.insertedInsect {
+  cursor: pointer;
+}
